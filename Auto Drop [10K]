@@ -1,0 +1,13 @@
+getgenv().AutoDrop = game:GetService("RunService").Heartbeat:Connect(function()
+
+                                                local args = {
+
+                                                    [1] = "DropMoney",
+
+                                                    [2] = "10000"
+
+                                                }
+
+ 
+
+                                                game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
